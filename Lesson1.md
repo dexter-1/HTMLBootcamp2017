@@ -152,3 +152,32 @@ Now it's time for you to practise coding on your own! In this exercise, create a
  * What city do you live in?
 
 When you are finished, you can go to the next section below to see the answer!
+
+### Answer
+To complete the exercise, add the following code:
+```html
+<h2>Biography</h2>
+<p>My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the University of Toronto to study Engineering. </p>
+```
+Since we want this section to be underneath the "Introduction" section, the code above must be placed underneath the code we wrote before. We use `h2` tags for the word Biography because we want it to have stand out as this is the title of the section. Finally, we use `p` tags for our biography paragraph!
+
+### Comments
+Comments are useful in coding to help someone reading your code know what it is doing. To create a comment, we simply put `<!--` before the comment and `-->` after the comment. Anything in between `<!--` and `-->` will not be seen on the website.
+
+I have commented the code we wrote so far as such:
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+
+<!-- p tags are used for paragraphs -->
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+
+<h2>Biography</h2>
+<p>My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the University of Toronto to study Engineering. </p>
+```
+If you put these comments into the editor on Thimble, you will not see the words inside the comments on the website!
+
+I will comment the code we write a lot to help you understand it when you are looking back at it.
