@@ -181,3 +181,62 @@ I have commented the code we wrote so far as such:
 If you put these comments into the editor on Thimble, you will not see the words inside the comments on the website!
 
 I will comment the code we write a lot to help you understand it when you are looking back at it.
+
+### Bold and Italics
+In order to make some text bold to stand out, we use the `strong` element. Let's say we wanted to make my place of birth stand out in the paragraph. I would just need to put the `strong` tags around the word Philippines so bold gets applied to the word!
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+
+<!-- p tags are used for paragraphs -->
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+
+<h2>Biography</h2>
+<!-- strong tag is used for bold -->
+<p>My name is Dexter Rivera. I was born in the <strong>Philippines</strong> on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the University of Toronto to study Engineering. </p>
+```
+Notice how the `strong` tags are inside the `p` tags. This is because I want the word 'Philippines' to be in the paragraph, but I also want it to be bold. Since the word 'Philippines' is inside both `p` and `strong`, both elements apply to it!
+
+Now let's say I want my name to be italicized, like this: _Dexter Rivera_. To do this, we do the same thing as we did with the `strong` tags, but this time we use the element name `em` instead:
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+
+<!-- p tags are used for paragraphs -->
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+
+<h2>Biography</h2>
+<!-- strong tag is used for bold, em for italics-->
+<p>My name is <em>Dexter Rivera</em>. I was born in the <strong>Philippines</strong> on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the University of Toronto to study Engineering. </p>
+```
+
+### Exercise
+In your biography paragraph, bold the following key information it stands out to the reader:
+  * Place of birth
+  * Birthday
+  * City you live in
+  * Age
+  * school
+
+### Solution
+Your code should look something like this:
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+
+<!-- p tags are used for paragraphs -->
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+
+<h2>Biography</h2>
+<!-- strong tag is used for bold, em for italics-->
+<p>My name is <em>Dexter Rivera</em>. I was born in the <strong>Philippines</strong> on <strong>December 20, 1997</strong>. I live in <strong>Markham, Ontario</strong> now. I am <strong>19</strong> years old. I currently go to school at the <strong>University of Toronto</strong> to study Engineering. </p>
+```
