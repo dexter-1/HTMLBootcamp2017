@@ -20,7 +20,7 @@ How do we write code? Computers only understand code written in a **language**. 
 ```
 The resulting website would look like this:  
 
-![](/screenshots/HelloWorld.png)
+![](/screenshots/Lesson1/HelloWorld.png)
 
 If the code above looks scary and complicated, don't panic! The `h1` in the code means to make the text _Hello World!_ really big. You can also see the words `color: blue`, which must have something to do with making the text look blue! If you still don't understand don't worry, we will get in more detail later!
 
@@ -44,8 +44,111 @@ In order to make cool website, we need to write code in HTML and CSS. But what i
 
 Let's think of building a website like building a house! To build a house, we need to build the walls and roof. This is similar to HTML. HTML lets us put the text on the website. But just like a house without furniture, carpets or the walls painted, only HTML on a website looks boring. For example, this is how Facebook looks with only HTML:  
 
-![](http://3.bp.blogspot.com/-Fa3EmmxrlQM/TqzpAqck4bI/AAAAAAAAAB8/E018EpBDF1g/s1600/facebook_with_no_css.png)
+![](/screenshots/Lesson1/FacebookNoCSS.png)
 
 It looks very boring and unrecognizable! This is where CSS comes in! CSS is similar to all the furniture and carpets that we add to our house to make it look pretty! With CSS, we can make the page we see above look like how you normally see Facebook when you login!
 
 There is also a third important language to make cool websites called **Javascript**. This is similar to all the appliances like the stove, furnace, toilets, etc. Javascript helps our website do cool things. Unfortunately, we will not have time to learn Javascript, but I encourage you to learn it on your own time after our bootcamp is over because you will need it if you want to build cool games like Angry Birds!
+
+## Let's Start Coding!
+As I said in the previous section, HTML is the like the walls and roof of our house we are trying to build.  This lesson on HTML may seem a bit boring and pointless, but bare with me because we need to learn HTML to build cool websites!
+
+So I want to start building my website, where do I get started? As we talked about in the previous section on coding, we need to give the commands to the computer. But where do we give those commands?
+
+We write our code, or list of commands, in a file with the extension `.html`. Just like if you have ever worked with Microsoft Word, those file names have extensions `.doc`. We need to create a file with an extension `.html`.
+
+To create our files, we will use a tool called [Thimble](https://thimble.mozilla.org/en-US). Once you click the link, press the "Start a project from scratch" button.
+
+You should arrive at the following screen below:
+
+![](/screenshots/Lesson1/Thimble.png)
+
+As you can see on the screen above, there are three main sections. In the left most section you will see all of the files that belong to your project. Just like I mentioned earlier, there is a file with the extension `.html`, where the computer will read all of the instructions we give it in code so that it can put what we want on our website.
+
+In the middle section you will see the editor. This is where we will write our code.
+
+In the right most section, you will a preview of what the website looks like based on the code you write in the editor. You can see that all of the code in the editor right now will produce the website in the preview. If you click the rightmost button that looks like four arrows pointing outward, you can expand the preview to make it fit the whole webpage.
+
+Now you are ready to write code and build cool websites! As you are reading through this lesson, type in the code you see here on Thimble so you can follow along.
+
+## Tags
+Now that we have a place to write our code, we can get started! First, let's delete all of the code currently in the editor so we can start from scratch.  
+
+Like I said before, in order to write code, we need to write it exactly as the language tells us to. For HTML, if we want to put something on a web page, we need to create tags.
+
+To create a tag, we need three things:
+1. Opening Tag
+2. Closing Tag
+3. Element name
+
+If we can remember these easy things, we can write HTML!
+
+In order to create the opening tag, we need to put the element name inside these brackets `<>` like this:
+```html
+<ELEMENT>
+```
+To create a closing tag, we do the exact same thing as we did with the opening tag, expect this time we will add a `/` in front of the element name. like this:
+```html
+</ELEMENT>
+```
+Finally, the element will tell the computer what to do with what is inside the opening and closing tag. We will talk about elements more in the upcoming sections.
+
+## Hello World!
+As a time honored tradition of coding, every coder's first **program** is `Hello World!`. A **program** is just another name for a set of instructions.
+
+In order to put _Hello World!_ on our website, we need to create a tag! In the editor in Thimble, write an opening tag followed by a closing tag, and for the element name, swap `ELEMENT` with `h1`. Your code should look like this:
+```html
+<h1></h1>
+```
+`h1` stands for "Header 1". This element will make any text inside the two tags nice and big on our website. So if we want the words "Hello World!" on our website, we need to write them inside the two `h1` tags, as shown below:
+```html
+<h1>Hello World!</h1>
+```
+As you can see on your preview screen, the words "Hello World!" will appear as such:
+
+![](/screenshots/Lesson1/HelloWorld2.png)
+
+Congrats, you just wrote your first program! 🎊🎉
+
+## Elements
+Throughout this bootcamp, we will be creating an About Me page. On this page you will display everything about you that you want your friends or family to see. We will publish this website and you will be able to send a link to anyone so anyone will be able to see your page, even if they are on the other side of the world!
+
+To get started on our about me page, let's change "Hello World!" to your name so anyone who sees the website will know its yours. All we need to do is change the text inside the `h1` tags like so:
+```html
+<h1>Dexter Rivera's Website!</h1>
+```
+Remember that `h1` stands for "Header 1". Headers are used for titles to sections. There are 5 more header tags, `h2`, `h3`, `h4`, `h5`, and `h6`. They are the same as `h1` except the text inside these tags are slightly smaller. Try putting the text below in Thimble and see what it looks like!
+```html
+<h2>Dexter Rivera's Website!</h2>
+<h3>Dexter Rivera's Website!</h3>
+<h4>Dexter Rivera's Website!</h4>
+<h5>Dexter Rivera's Website!</h5>
+<h6>Dexter Rivera's Website!</h6>
+```
+
+### Paragraphs
+Underneath the title of our website, let's add an introduction section where we can introduce a visitor to our website. I will add a title to the section using the `h2` tag, like so:
+```html
+<h2>Introduction</h2>
+```
+Put this code on line 2. Your page should now look like this:
+
+![](/screenshots/Lesson1/Introduction.png)
+
+Notice how the title "Introduction" appears on the line below "Hello World!". In HTML, the order in which the code appears is the order in which you see it on the website!
+
+Let's now write a block of text. To do this, we need to create a tag with the element name `p`, for paragraph! Create your opening and closing tags, and write your paragraph of text introducing your website to a visitor inside the two `p` tags, like so:
+
+```html
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+```
+
+### Exercise
+Now it's time for you to practise coding on your own! In this exercise, create a new section with the title "Biography" and in that section write some text to explain to the reader the following:
+ * When is your birthday?
+ * Where were you born?
+ * How old are you now?
+ * What school do you go to?
+ * What city do you live in?
+
+When you are finished, you can go to the next section below to see the answer!
