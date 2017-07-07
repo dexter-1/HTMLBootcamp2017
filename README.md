@@ -5,7 +5,6 @@
 **Instructor**: Dexter Rivera
 
 Hello Class! I hope you are enjoying our weekly lessons! Here you will find all of the resources you need to do well in this bootcamp. Below you will learn:
-  * Final project assignment sheet
   * How to find all of the code we wrote together in class
   * Class Notes
   * How to get help on coding problems when working at home
