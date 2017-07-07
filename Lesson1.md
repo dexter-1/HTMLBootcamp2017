@@ -8,6 +8,17 @@
   * What is coding?
   * Why learn coding?
   * What is web development?
+  * How to use Thimble
+  * HTML:
+      * Tags
+      * Hello World!
+      * Elements
+      * Paragraphs
+      * Bold and Italics
+      * Lists
+      * Images
+      * Links
+  * More resources
 
 ## What is coding?
 **Coding**, also know as **computer programming**, is just writing a set of instructions, or commands, that a computer will follow so you can get it to do what you want to do.
@@ -126,7 +137,7 @@ Remember that `h1` stands for "Header 1". Headers are used for titles to section
 <h6>Dexter Rivera's Website!</h6>
 ```
 
-### Paragraphs
+## Paragraphs
 Underneath the title of our website, let's add an introduction section where we can introduce a visitor to our website. I will add a title to the section using the `h2` tag, like so:
 ```html
 <h2>Introduction</h2>
@@ -161,7 +172,7 @@ To complete the exercise, add the following code:
 ```
 Since we want this section to be underneath the "Introduction" section, the code above must be placed underneath the code we wrote before. We use `h2` tags for the word Biography because we want it to have stand out as this is the title of the section. Finally, we use `p` tags for our biography paragraph!
 
-### Comments
+## Comments
 Comments are useful in coding to help someone reading your code know what it is doing. To create a comment, we simply put `<!--` before the comment and `-->` after the comment. Anything in between `<!--` and `-->` will not be seen on the website.
 
 I have commented the code we wrote so far as such:
@@ -182,7 +193,7 @@ If you put these comments into the editor on Thimble, you will not see the words
 
 I will comment the code we write a lot to help you understand it when you are looking back at it.
 
-### Bold and Italics
+## Bold and Italics
 In order to make some text bold to stand out, we use the `strong` element. Let's say we wanted to make my place of birth stand out in the paragraph. I would just need to put the `strong` tags around the word Philippines so bold gets applied to the word!
 ```html
 <!-- This is a h1 tag. h1 is used to make really large texts for titles -->
@@ -240,3 +251,160 @@ Your code should look something like this:
 <!-- strong tag is used for bold, em for italics-->
 <p>My name is <em>Dexter Rivera</em>. I was born in the <strong>Philippines</strong> on <strong>December 20, 1997</strong>. I live in <strong>Markham, Ontario</strong> now. I am <strong>19</strong> years old. I currently go to school at the <strong>University of Toronto</strong> to study Engineering. </p>
 ```
+
+## Lists
+The next element we will learn about is lists. There are two types of lists, ordered lists and unordered lists. Unordered lists appear as bullet points like this:
+
+ * List item 1
+ * List item 2
+ * List item 3
+ 
+ Order lists have a number in front, like this:
+ 
+ 1. List item 1
+ 2. List item 2
+ 3. List item 3
+ 
+To create a list, we need to put all of the stuff we want in the list inside two tags, `ul` for unordered lists and `ol` for ordered lists:
+```html
+<ul></ul> <!-- for unordered lists (bullet points) -->
+<ol></ol>  <!-- for ordered lists (numbers) -->
+```
+To add items to the list, you must put each item inside `<li></li>` tags. This applies to both types of lists. For example, if I want to make a list of my favourite sports, I would do it like this:
+```html
+<ul>
+    <li>Basketball</li>
+    <li>Baseball</li>
+    <li>Tennis</li>
+    <li>Swimming</li>
+</ul>
+```
+Notice how the `<li></li>` tags are inside the `<ul></ul>` tags. We need to put the `<li></li>` tags inside `<ul></ul>` tags or you will not see the bullet points! When you put tags inside other tags, it's usually good to indent each of the inner tags so it's easier for someone to read your code and know that the `li` elements are inside `ul` and not after.
+
+Next I will add a "My favourite sports" section to my all about me page and include the list I made above:
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+
+<!-- p tags are used for paragraphs -->
+<p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+
+<h2>Biography</h2>
+<p>My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the University of Toronto to study Engineering. </p>
+
+<h2>My favourite sports</h2>
+<p>Here are a list of my favourite sports: </p>
+<ul> <!-- for unordered lists (bullet points) -->
+    <li>Basketball</li> <!-- each of the bullet points must be inside li tags -->
+    <li>Baseball</li>
+    <li>Tennis</li>
+    <li>Swimming</li>
+</ul>
+```
+
+Now my about me page looks like this:  
+**insert screenshot of webpage here**
+
+### Exercise
+Add a section to your webside called "My Favourite Video Games" and make a list of your top 5 favourite video games, this time make a numbered list and order your list from your most favourite to least favourite. If you don't like any video games, make a list of your favourite movies or singers! 
+
+### Solution
+Here is my section for my favourite video games:
+```html
+<h2>My top 5 favourite video games</h2>
+<p>Here is a list of my favourite video games: </p>
+<ol>
+    <li>Pokemon Emerald Version</li>
+    <li>NBA 2K17</li>
+    <li>MLB The Show</li>
+    <li>Star Wars Battlefront</li>
+    <li>Call of Duty: Black Ops </li>
+<ol>
+```
+
+## Images
+What's an about me page without a picture of you! To put an image on a website, you need to use the `img` tag. I don't have any pictures of myself, so instead I want to put this picture that I found on the internet using a quick google search:  
+
+**screen shot of google search**
+
+How do I do this? We need to add an **attribute** to the `img` element. Attributes change how a specific element on a webpage looks or what it does. In this case, we will add the `src` element to tell the computer that the image will come from some place on the internet. We add an attribute by putting the attribute name inside the opening tag, putting an equals sign beside it and setting the attribute inside "". For example, if we want to set where the image will come from, we do this:
+```html
+<img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+```
+The `img` tag is special because it does not need a closing tag to work. Let's say we want to put the image after the title "Dexter Rivera's Webstie". Where would I put this tag?
+
+**Answer:**
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- this is an img tag. This is to put images on a website. We need to set the src attribute to the link of the image -->
+<img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+```
+We need to put the `img` tag after our first `h1` tag but before the `h2` tag with the Introduction. Remember that the elements on a website appear just like you see them in your code!
+
+This image looks to small, how would I make it bigger? We can add `height` and `width` attributes to the `img` tag, like this:
+```html
+<img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif" height="250" width="250">
+```
+Play around with the numbers on Thimble to find the right size for you! 
+
+## Links
+On many websites, you can click links and go to other ones. How can we do this on our website? I want people to know what the University of Toronto is when they read my bio, so I want to send them to our school website. To do this, we use the `a` tag. We need to wrap the word "University of Toronto" around `a` tags, then add the attribute `href` and set the attribute to the link you want, like this:
+```html
+<!-- a tags are used for links -->
+<p>My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the <a href="https://www.utoronto.ca/">University of Toronto</a> to study Engineering. </p>
+```
+Don't forget the closing tag! Only the text in between the opening and closing tags will turn into a link. We can add the `title` attribute to the `a` tag. The `title` attribute makes some text pop up when someone puts their mouse over the link:
+```html
+<!-- a tags are used for links -->
+<p>My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the <a href="https://www.utoronto.ca/" title="Click here to learn more about my school!">University of Toronto</a> to study Engineering. </p>
+```
+When I added the title attribute above, now this shows up when I hover over the link:  
+**image of hover here**
+
+We can also add links to our own website. Let's say our website is really long and I don't want people to have to scoll all the way down to just see my top 5 favourite video games! We can make a Table of Contents. We will put it right after our picture of us and use bullet points to define the sections:
+```html
+<!-- This is a h1 tag. h1 is used to make really large texts for titles -->
+<h1>Dexter Rivera's Website</h1>
+
+<!-- this is an img tag. This is to put images on a website. We need to set the src attribute to the link of the image -->
+<img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+
+<h2>Table of Contents</h2>
+<ul>
+    <li>Introduction</li>
+    <li>Biography</li>
+    <li>My favourite sports</li>
+    <li>My top 5 favourite video games</li>
+</ul>
+
+<!-- h2 is similar to h1, but the text is smaller -->
+<h2>Introduction</h2>
+```
+Then we put our `a` tags around "My top 5 favourite video games" because we want to link to that section. This time, we will set the `href` attribute to whatever we want, but we must put a "#" in front of it:
+```html
+<li><a href="#videogames">My top 5 favourite video games</a></li>
+```
+Remember that since we want "My top 5 favourite video games" to be both a bullet point and a link, we need to put `<a></a>` tags inside the `<li></li>` tags.
+
+Now we must go to the section called "My top 5 favourite video games." Inside the `h2` tag, we need to add the attribute `id` and set it to whatever we put after the "#". For me, I put "video games", so I need to set id to "videogames" like this:
+```html
+<h2 id="videogames">My top 5 favourite video games</h2>
+```
+Now if we click on the link in the table of contents section, it will work! 
+
+### Exercise
+Create links for each of the sections in the table of contents
+
+## Learn About more Elements!
+Unfortunately, I don't have enough time to show you all of the different elements you can use, but I did show you the most important ones. If you want to learn about more tags you can use, visit [w3Schools](https://www.w3schools.com/tags). w3schools is a great place to learn more about web development! The page lists all of the different tags you can use and let you even try them! 
+
+## Conclusion
+I hope you are used to writing HTML code now! Our website looks really boring, but don't work! Next week we will learn CSS, the coding language used to make our websites look very pretty!
