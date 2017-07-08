@@ -5,20 +5,20 @@
 **Instructor**: Dexter Rivera
 
 **What you will learn in this lesson**
-  * What is coding?
-  * Why learn coding?
-  * What is web development?
-  * How to use Thimble
+  * [What is coding?](#what-is-coding)
+  * [Why learn coding?](#why-learn-coding)
+  * [What is web development?](#what-is-web-development)
+  * [How to use Thimble](#using-thimble-to-code)
   * HTML:
-      * Tags
-      * Hello World!
-      * Elements
-      * Paragraphs
-      * Bold and Italics
-      * Lists
-      * Images
-      * Links
-  * More resources
+      * [Tags](#tags)
+      * [Hello World!](#hello-world)
+      * [Elements](#elements)
+      * [Paragraphs](#paragraphs)
+      * [Bold and Italics](#bold-and-italics)
+      * [Lists](#lists)
+      * [Images](#images)
+      * [Links](#links)
+  * [More resources](#learn-about-more-elements)
 
 ## What is coding?
 **Coding**, also know as **computer programming**, is just writing a set of instructions, or commands, that a computer will follow so you can get it to do what you want to do.
@@ -61,7 +61,7 @@ It looks very boring and unrecognizable! This is where CSS comes in! CSS is simi
 
 There is also a third important language to make cool websites called **Javascript**. This is similar to all the appliances like the stove, furnace, toilets, etc. Javascript helps our website do cool things. Unfortunately, we will not have time to learn Javascript, but I encourage you to learn it on your own time after our bootcamp is over because you will need it if you want to build cool games like Angry Birds!
 
-## Let's Start Coding!
+## Using Thimble to Code
 As I said in the previous section, HTML is the like the walls and roof of our house we are trying to build.  This lesson on HTML may seem a bit boring and pointless, but bare with me because we need to learn HTML to build cool websites!
 
 So I want to start building my website, where do I get started? As we talked about in the previous section on coding, we need to give the commands to the computer. But where do we give those commands?
