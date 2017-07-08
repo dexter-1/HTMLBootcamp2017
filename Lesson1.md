@@ -258,13 +258,13 @@ The next element we will learn about is lists. There are two types of lists, ord
  * List item 1
  * List item 2
  * List item 3
- 
+
  Order lists have a number in front, like this:
- 
+
  1. List item 1
  2. List item 2
  3. List item 3
- 
+
 To create a list, we need to put all of the stuff we want in the list inside two tags, `ul` for unordered lists and `ol` for ordered lists:
 ```html
 <ul></ul> <!-- for unordered lists (bullet points) -->
@@ -305,11 +305,12 @@ Next I will add a "My favourite sports" section to my all about me page and incl
 </ul>
 ```
 
-Now my about me page looks like this:  
-**insert screenshot of webpage here**
+Now my about me page looks like this:
+
+![](/screenshots/Lesson1/Lists.png)
 
 ### Exercise
-Add a section to your webside called "My Favourite Video Games" and make a list of your top 5 favourite video games, this time make a numbered list and order your list from your most favourite to least favourite. If you don't like any video games, make a list of your favourite movies or singers! 
+Add a section to your webside called "My Favourite Video Games" and make a list of your top 5 favourite video games, this time make a numbered list and order your list from your most favourite to least favourite. If you don't like any video games, make a list of your favourite movies or singers!
 
 ### Solution
 Here is my section for my favourite video games:
@@ -328,7 +329,7 @@ Here is my section for my favourite video games:
 ## Images
 What's an about me page without a picture of you! To put an image on a website, you need to use the `img` tag. I don't have any pictures of myself, so instead I want to put this picture that I found on the internet using a quick google search:  
 
-**screen shot of google search**
+![](/screenshots/Lesson1/images.png)
 
 How do I do this? We need to add an **attribute** to the `img` element. Attributes change how a specific element on a webpage looks or what it does. In this case, we will add the `src` element to tell the computer that the image will come from some place on the internet. We add an attribute by putting the attribute name inside the opening tag, putting an equals sign beside it and setting the attribute inside "". For example, if we want to set where the image will come from, we do this:
 ```html
@@ -353,7 +354,7 @@ This image looks to small, how would I make it bigger? We can add `height` and `
 ```html
 <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif" height="250" width="250">
 ```
-Play around with the numbers on Thimble to find the right size for you! 
+Play around with the numbers on Thimble to find the right size for you!
 
 ## Links
 On many websites, you can click links and go to other ones. How can we do this on our website? I want people to know what the University of Toronto is when they read my bio, so I want to send them to our school website. To do this, we use the `a` tag. We need to wrap the word "University of Toronto" around `a` tags, then add the attribute `href` and set the attribute to the link you want, like this:
@@ -398,13 +399,13 @@ Now we must go to the section called "My top 5 favourite video games." Inside th
 ```html
 <h2 id="videogames">My top 5 favourite video games</h2>
 ```
-Now if we click on the link in the table of contents section, it will work! 
+Now if we click on the link in the table of contents section, it will work!
 
 ### Exercise
 Create links for each of the sections in the table of contents
 
 ## Learn About more Elements!
-Unfortunately, I don't have enough time to show you all of the different elements you can use, but I did show you the most important ones. If you want to learn about more tags you can use, visit [w3Schools](https://www.w3schools.com/tags). w3schools is a great place to learn more about web development! The page lists all of the different tags you can use and let you even try them! 
+Unfortunately, I don't have enough time to show you all of the different elements you can use, but I did show you the most important ones. If you want to learn about more tags you can use, visit [w3Schools](https://www.w3schools.com/tags). w3schools is a great place to learn more about web development! The page lists all of the different tags you can use and let you even try them!
 
 ## Conclusion
 I hope you are used to writing HTML code now! Our website looks really boring, but don't work! Next week we will learn CSS, the coding language used to make our websites look very pretty!
