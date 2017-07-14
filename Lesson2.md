@@ -1,4 +1,4 @@
-# Lesson 1
+# Lesson 2
 **Date**: Saturday, July 15, 2017  
 **Time**: 10:00 am - 12:00 pm  
 **Location**: York Woods Public Library, 1785 Finch Ave W, North York, ON M3N 1M6  
@@ -16,7 +16,7 @@
   * [The class selector](#the-class-selector)
   * [Applying the Box Model](#applying-the-box-model)
   * [The id selector](#the-id-selector)
-  * [Pseudo Classes](#pseudo-classes)
+  * [Hovering](#hovering)
   * [Animations](#animations)
 
 ## What is CSS?
@@ -291,7 +291,7 @@ We can also make the edges curved by setting the border-radius property:
 	background-color: white;
 	padding: 20px;
 	border: 1px solid purple;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 ```
 
@@ -320,3 +320,32 @@ body {
   margin-right: 300px;
 }
 ```
+
+## The id selector
+Let's say we only wanted to apply style to one element only. For example, let's say that I the word "basketball" in my list of favourite sports to be orange. We can use the `id` selector.
+
+First we go to the html tag that has basketball and give it the attribute `id` with a name:
+```html
+<li id="basketball">Basketball</li>
+```
+Then we add our style to the css file, this time using a `#` in front of the name you picked instead of `.`:
+```css
+#basketball {
+	color: orange;
+}
+```
+Now only the word basketball is in orange!
+
+It is important to note that unlike `class`, `id` only applies to one element on your website whereas `class` can be used many times.
+
+## Hovering
+We can make our elements change when we put the mouse over it. For example, let's say we want the link we created to turn green when our mouse hovers over it. We can do so like this:
+```css
+a:hover {
+	color: green;
+}
+```
+We can the element we want, in this case `a`, put a colon and the word hover after it. Now the link will be green only if we put the mouse over it.
+
+### A trickier example
+Let's make the text below each title hidden 
