@@ -386,7 +386,7 @@ Instead of making the text below each title appear and reappear, let's just chan
 You need to set the background color purple and the font white when you hover over!
 
 ## Animations
-To make our page more interesting, we will add some animations. For example, I want the boxes to slide in from the left and right when the page loads. To do this, we first need to include this at the top of the `index.html` file:
+To make our page more interesting, we will add some animations. For example, I want the boxes to bounce in from the left and right when the page loads. To do this, we first need to include this at the top of the `index.html` file:
 
 ```html
 <head>
@@ -394,9 +394,9 @@ To make our page more interesting, we will add some animations. For example, I w
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 ```
-Just like how we used the `<link>` tag to put our `style.css` file into our `index.html` file, we are also including another `.css` file, this time a file that someone else wrote and we will use. To make the animations, all we need to do is add `animation animation-name` where `animation-name` could be something like `slideInLeft`:
+Just like how we used the `<link>` tag to put our `style.css` file into our `index.html` file, we are also including another `.css` file, this time a file that someone else wrote and we will use. To make the animations, all we need to do is add `animation animation-name` where `animation-name` could be something like `bounceInLeft`:
 ```html
-<div class="box animated slideInLeft">
+<div class="box animated bounceInLeft">
     <h2>Table of Contents</h2>
     <ul class="popup">
       <li>Introduction</li>
@@ -406,9 +406,9 @@ Just like how we used the `<link>` tag to put our `style.css` file into our `ind
     </ul>
   </div>
 ```
-We put the class names inside the `<div></div>` tags because it is the box we want to slide in from the left. I will do this for the rest of the boxes, alternating between `slideInLeft` and `slideInRight`:
+We put the class names inside the `<div></div>` tags because it is the box we want to bounce in from the left. I will do this for the rest of the boxes, alternating between `bounceInLeft` and `bounceInRight`:
 ```html
-<div class="box animated slideInLeft">
+<div class="box animated bounceInLeft">
     <h2>Table of Contents</h2>
     <ul class="popup">
       <li>Introduction</li>
@@ -422,7 +422,7 @@ We put the class names inside the `<div></div>` tags because it is the box we wa
 
   </div>
 -->
-  <div class="box animated slideInRight">
+  <div class="box animated bounceInRight">
     <!-- h2 is similar to h1, but the text is smaller -->
     <h2>Introduction</h2>
 
@@ -430,12 +430,12 @@ We put the class names inside the `<div></div>` tags because it is the box we wa
     <p class="popup">Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
   </div>
 
-  <div class="box animated slideInLeft">
+  <div class="box animated bounceInLeft">
     <h2>Biography</h2>
     <p class="popup">My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the <a href="https://www.utoronto.ca/" title="Click here to learn more about my school!">University of Toronto</a> to study Engineering. </p>
   </div>
 
-  <div class="box animated slideInRight">
+  <div class="box animated bounceInRight">
     <h2>My favourite sports</h2>
     <p class="popup">Here are a list of my favourite sports: </p>
     <ul class="popup"> <!-- for unordered lists (bullet points) -->
@@ -446,7 +446,7 @@ We put the class names inside the `<div></div>` tags because it is the box we wa
     </ul>
   </div>
 
-  <div class="box animated slideInLeft">
+  <div class="box animated bounceInLeft">
     <h2 id="videogames">My top 5 favourite video games</h2>
     <p class="popup">Here is a list of my favourite video games: </p>
     <ol class="popup">
@@ -458,7 +458,7 @@ We put the class names inside the `<div></div>` tags because it is the box we wa
     </ol>
   </div>
 ```
-If you want to try the different animations, go to [Animate.css](https://daneden.github.io/animate.css/). You can pick the animation you want, and if you like it, you can change the name `slideInLeft` to that animation.
+If you want to try the different animations, go to [Animate.css](https://daneden.github.io/animate.css/). You can pick the animation you want, and if you like it, you can change the name `bounceInLeft` to that animation.
 
 ## Conclusion
 Now our website looks better than last week, but still not too pretty as it could be! Next week we will be learning a new tool that will make our websites look ever prettier, something closer to what you see on Facebook!

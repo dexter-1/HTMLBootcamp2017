@@ -1,0 +1,35 @@
+h1, h2 {
+  color: purple;
+}
+
+body {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  background-color: #CFC0DD;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid purple;
+  margin: 10px;
+}
+
+.popup {
+  display: none;
+}
+
+div:hover .popup {
+  display: block;
+}
+
+#basketball {
+  color: orange;
+}
+
+a:hover {
+  color: green;
+}
