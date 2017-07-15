@@ -11,6 +11,7 @@
   * [Colors](#colors)
   * [Fonts](#fonts)
   * [Color Selecting](#color-selecting)
+  * [Background Images](#background-images)
   * [The box model](#the-box-model)
   * [Div Tags](#div-tags)
   * [The class selector](#the-class-selector)
@@ -148,6 +149,16 @@ body {
 
 ### Exercise
 Play around with the colors and fonts and set your own color and font! You can even change the color of the paragraph font or bullet point fonts!
+
+## Background Images
+If you would like a picture in the background instead of just plain old purple, we can do this:
+
+```css
+body {
+	...
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg);
+}
+```
 
 ## The Box Model
 We have a lot of sections in our website. Let's say we wanted to put these sections in boxes, like you see in Facebook:
