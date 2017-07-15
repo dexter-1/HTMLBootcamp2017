@@ -458,7 +458,7 @@ We put the class names inside the `<div></div>` tags because it is the box we wa
     </ol>
   </div>
 ```
-If you want to try the different animations, go to ![Animate.css](https://daneden.github.io/animate.css/). You can pick the animation you want, and if you like it, you can change the name `slideInLeft` to that animation.
+If you want to try the different animations, go to [Animate.css](https://daneden.github.io/animate.css/). You can pick the animation you want, and if you like it, you can change the name `slideInLeft` to that animation.
 
 ## Conclusion
-Now our website looks better than last week, but still not too pretty as it could be! Next week we will be learning a new tool that will make our websites look ever prettier, something closer to what you see on Facebook! 
+Now our website looks better than last week, but still not too pretty as it could be! Next week we will be learning a new tool that will make our websites look ever prettier, something closer to what you see on Facebook!
