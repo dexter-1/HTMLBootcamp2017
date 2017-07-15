@@ -316,10 +316,11 @@ body {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 14px;
   background-color: #CFC0DD;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 ```
+You can see that the 25% is different from the `px` values we see. To explain what we mean by percent, let's imagine the website as a big rectangular pizza. We will put the pizza up into four slices. The first slice will just be empty (`margin-left: 25%`), the last slice will be empty (`margin-right: 25%`), and the middle two slices is where the website will sit.
 
 ## The id selector
 Let's say we only wanted to apply style to one element only. For example, let's say that I the word "basketball" in my list of favourite sports to be orange. We can use the `id` selector.
@@ -348,4 +349,116 @@ a:hover {
 We can the element we want, in this case `a`, put a colon and the word hover after it. Now the link will be green only if we put the mouse over it.
 
 ### A trickier example
-Let's make the text below each title hidden 
+Let's make the text below each title hidden but make it reappear when we hover over it. We will start with the table of contents. First we will add a `class="popup"` to the `ul` element:
+```html
+...
+<ul class="popup">
+      <li>Introduction</li>
+      <li>Biography</li>
+      <li>My favourite sports</li>
+      <li><a href="#videogames">My top 5 favourite video games</a></li>
+</ul>
+```
+We want to add the class to the `ul` element because we only want this part to disappear and reappear when we put our mouse over it.
+
+Next we will add our CSS styling:
+```css
+.popup {
+	display: none;
+}
+```
+When we add `display: none`, this makes the list disappear. Next we add the following CSS to make the list reappear when we put our mouse over the box:
+```css
+div:hover .popup {
+	display: block;
+}
+```
+The `div:hover` part means apply only when we put our mouse over the `div` element, which in this case is the box. The `.popup` afterwards means that the styling inside the curly braces will get applied once we hover over. `display: block` means to display the list instead of make it disappear.
+
+No if we want to make this happen for all of our sections, all we need to do is add `class="popup"` to the sections we want to disappear and reappear!
+
+### Challenge
+Instead of making the text below each title appear and reappear, let's just change the color of the box to be purple and the font color to be white, like this:
+
+![](/screenshots/Lesson2/hover.png)
+
+**Hint:**
+You need to set the background color purple and the font white when you hover over!
+
+## Animations
+To make our page more interesting, we will add some animations. For example, I want the boxes to slide in from the left and right when the page loads. To do this, we first need to include this at the top of the `index.html` file:
+
+```html
+<head>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+```
+Just like how we used the `<link>` tag to put our `style.css` file into our `index.html` file, we are also including another `.css` file, this time a file that someone else wrote and we will use. To make the animations, all we need to do is add `animation animation-name` where `animation-name` could be something like `slideInLeft`:
+```html
+<div class="box animated slideInLeft">
+    <h2>Table of Contents</h2>
+    <ul class="popup">
+      <li>Introduction</li>
+      <li>Biography</li>
+      <li>My favourite sports</li>
+      <li><a href="#videogames">My top 5 favourite video games</a></li>
+    </ul>
+  </div>
+```
+We put the class names inside the `<div></div>` tags because it is the box we want to slide in from the left. I will do this for the rest of the boxes, alternating between `slideInLeft` and `slideInRight`:
+```html
+<div class="box animated slideInLeft">
+    <h2>Table of Contents</h2>
+    <ul class="popup">
+      <li>Introduction</li>
+      <li>Biography</li>
+      <li>My favourite sports</li>
+      <li><a href="#videogames">My top 5 favourite video games</a></li>
+    </ul>
+  </div>
+<!--
+  <div class="header">
+
+  </div>
+-->
+  <div class="box animated slideInRight">
+    <!-- h2 is similar to h1, but the text is smaller -->
+    <h2>Introduction</h2>
+
+    <!-- p tags are used for paragraphs -->
+    <p class="popup">Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+  </div>
+
+  <div class="box animated slideInLeft">
+    <h2>Biography</h2>
+    <p class="popup">My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the <a href="https://www.utoronto.ca/" title="Click here to learn more about my school!">University of Toronto</a> to study Engineering. </p>
+  </div>
+
+  <div class="box animated slideInRight">
+    <h2>My favourite sports</h2>
+    <p class="popup">Here are a list of my favourite sports: </p>
+    <ul class="popup"> <!-- for unordered lists (bullet points) -->
+      <li id="basketball">Basketball</li> <!-- each of the bullet points must be inside li tags -->
+      <li>Baseball</li>
+      <li>Tennis</li>
+      <li>Swimming</li>
+    </ul>
+  </div>
+
+  <div class="box animated slideInLeft">
+    <h2 id="videogames">My top 5 favourite video games</h2>
+    <p class="popup">Here is a list of my favourite video games: </p>
+    <ol class="popup">
+      <li>Pokemon Emerald Version</li>
+      <li>NBA 2K17</li>
+      <li>MLB The Show</li>
+      <li>Star Wars Battlefront</li>
+      <li>Call of Duty: Black Ops </li>
+    </ol>
+  </div>
+```
+If you want to try the different animations, go to ![Animate.css](https://daneden.github.io/animate.css/). You can pick the animation you want, and if you like it, you can change the name `slideInLeft` to that animation.
+
+## Conclusion
+Now our website looks better than last week, but still not too pretty as it could be! Next week we will be learning a new tool that will make our websites look ever prettier, something closer to what you see on Facebook! 
