@@ -5,21 +5,21 @@
 **Instructor**: Dexter Rivera
 
 ### What you will learn in this lesson
-  * [What is Semantic UI](what-is-semantic-ui)
-  * [How to use semantic UI](how-to-use-semantic-ui)
-  * [Segments](segments)
-   * [Multiple Segments](multiple-segments)
-   * [Changing colour of the segments](changing-colour-of-the-segments)
-   * [Challenge 1](challenge-1)
-  * [Navbar](navbar)
-  * [Cards](cards)
-  * [Lists](lists)
-  * [Icons](icons)
-  * [Grid](grid)
-  * [Challenges](challenges)
-  * [Challenge 2](challenge-2)
-  * [Challenge 3](challenge-2)
-  * [Challenge 4](challenge-2)
+  * [What is Semantic UI](#what-is-semantic-ui)
+  * [How to use semantic UI](#how-to-use-semantic-ui)
+  * [Segments](#segments)
+   * [Multiple Segments](#multiple-segments)
+   * [Changing colour of the segments](#changing-colour-of-the-segments)
+   * [Challenge 1](#challenge-1)
+  * [Navbar](#navbar)
+  * [Cards](#cards)
+  * [Lists](#lists)
+  * [Icons](#icons)
+  * [Grid](#grid)
+  * [Challenges](#challenges)
+  * [Challenge 2](#challenge-2)
+  * [Challenge 3](#challenge-3)
+  * [Challenge 4](#challenge-4)
 
 ## What is Semantic UI?
 In this lesson we will be making our websites look even prettier than before with a tool called Semantic UI. Semantic UI lets us have cool elements on the page without writing a whole lot of CSS! To get started, we need to include a link to the Semantic UI style sheet:
