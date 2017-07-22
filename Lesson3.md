@@ -156,7 +156,7 @@ Change the rest of the boxes you currently have to ui segments! You can explore 
 ## Navbar
 Next we will get rid of our table of contents section and add a navbar instead, which most websites have. To do this we will go to the [menu section](https://semantic-ui.com/collections/menu.html) in semantic ui. We will scroll down to the section called "Variations" :
 
-![](/screenshots/Lesson3/fixed.png)
+![](/screenshots/Lesson3/Fixed.png)
 
 We will click on the `<>` button right beside the "Fixed" title. This gives us the code for a navbar at the top of our website. We will copy only the `<div class="ui top fixed menu"> ... </div>` tags because we only want a navbar at the top of our website, not the bottom. We will place this at the top of our `<body></body>` tag:
 
