@@ -1,68 +1,97 @@
 <head>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 </head>
 <body>
   <link rel="stylesheet" href="style.css">
 
+  <div class="ui top inverted purple fixed menu">
+    <div class="item">
+      <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+    </div>
+    <a class="item" href="#introduction">Introduction</a>
+    <a class="item" href="#biography">Biography</a>
+    <a class="item" href="#sports">My favourite sports</a>
+    <a class="item" href="#videogames">My top 5 favourite video games</a>
+  </div>
+
   <!-- This is a h1 tag. h1 is used to make really large texts for titles -->
   <h1>Dexter Rivera's Website</h1>
 
-  <!-- the image tag is used for images. Fill in the src attribute to import the image from somewher else -->
-  <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif" height="250" width="250">
+  <div class="ui grid">
+    <div class="four wide column">
+      <div class="ui card">
+        <div class="image">
+          <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+        </div>
+        <div class="content">
+          <a class="header">Dexter Rivera</a>
+          <div class="meta">
+            <span class="date">HTML and CSS Coder</span>
+          </div>
+          <div class="description">
+            <div class="ui list">
+              <div class="item"><i class="Philippines flag"></i> Born in the Philippines</div>
+              <div class="item"><i class="Birthday icon"></i> Birthday on December 20, 1997</div>
+              <div class="item"><i class="Home icon"></i> Lives in Markham, Ontario</div>
+              <div class="item"><i class="Calendar icon"></i> 19 years old</div>
+              <div class="item"><i class="Graduation icon"></i> Attends the University of Toronto</div>
+            </div>
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+            <i class="user icon"></i>
+            22 Friends
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="twelve wide column">
+      <div class="ui raised segments animated bounceInRight" id="introduction">
+        <div class="ui purple inverted segment">
+          <!-- h2 is similar to h1, but the text is smaller -->
+          <h2>Introduction</h2>
+        </div>
 
-<!--
-  <div class="header">
+        <div class="ui segment">
+          <!-- p tags are used for paragraphs -->
+          <p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
+        </div>
+      </div>
 
-  </div>
--->
-  <div class="box animated bounceInLeft">
-    <h2>Table of Contents</h2>
-    <ul class="popup">
-      <li>Introduction</li>
-      <li>Biography</li>
-      <li>My favourite sports</li>
-      <li><a href="#videogames">My top 5 favourite video games</a></li>
-    </ul>
-  </div>
-<!--
-  <div class="header">
+      <div class="ui raised segments animated bounceInRight" id="sports">
+        <div class="ui purple inverted segment">
+          <h2>My favourite sports</h2>
+        </div>
+        <div class="ui segment">
+          <p class="popup">Here are a list of my favourite sports: </p>
+          <ul class="popup"> <!-- for unordered lists (bullet points) -->
+            <li id="basketball">Basketball</li> <!-- each of the bullet points must be inside li tags -->
+            <li>Baseball</li>
+            <li>Tennis</li>
+            <li>Swimming</li>
+          </ul>
+        </div>
+      </div>
 
-  </div>
--->
-  <div class="box animated bounceInRight">
-    <!-- h2 is similar to h1, but the text is smaller -->
-    <h2>Introduction</h2>
-
-    <!-- p tags are used for paragraphs -->
-    <p class="popup">Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
-  </div>
-
-  <div class="box animated bounceInLeft">
-    <h2>Biography</h2>
-    <p class="popup">My name is Dexter Rivera. I was born in the Philippines on December 20, 1997. I live in Markham, Ontario now. I am 19 years old. I currently go to school at the <a href="https://www.utoronto.ca/" title="Click here to learn more about my school!">University of Toronto</a> to study Engineering. </p>
-  </div>
-
-  <div class="box animated bounceInRight">
-    <h2>My favourite sports</h2>
-    <p class="popup">Here are a list of my favourite sports: </p>
-    <ul class="popup"> <!-- for unordered lists (bullet points) -->
-      <li id="basketball">Basketball</li> <!-- each of the bullet points must be inside li tags -->
-      <li>Baseball</li>
-      <li>Tennis</li>
-      <li>Swimming</li>
-    </ul>
-  </div>
-
-  <div class="box animated bounceInLeft">
-    <h2 id="videogames">My top 5 favourite video games</h2>
-    <p class="popup">Here is a list of my favourite video games: </p>
-    <ol class="popup">
-      <li>Pokemon Emerald Version</li>
-      <li>NBA 2K17</li>
-      <li>MLB The Show</li>
-      <li>Star Wars Battlefront</li>
-      <li>Call of Duty: Black Ops </li>
-    </ol>
+      <div class="ui raised segments animated bounceInLeft" id="videogames">
+        <div class="ui inverted purple segment">
+          <h2 id="videogames">My top 5 favourite video games</h2>
+        </div>
+        <div class="ui segment">
+          <p class="popup">Here is a list of my favourite video games: </p>
+          <ol class="popup">
+            <li>Pokemon Emerald Version</li>
+            <li>NBA 2K17</li>
+            <li>MLB The Show</li>
+            <li>Star Wars Battlefront</li>
+            <li>Call of Duty: Black Ops </li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
