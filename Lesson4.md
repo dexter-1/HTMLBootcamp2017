@@ -1,4 +1,4 @@
-# Lesson 3
+# Lesson 4
 **Date**: Saturday, July 29, 2017  
 **Time**: 10:00 am - 12:00 pm  
 **Location**: York Woods Public Library, 1785 Finch Ave W, North York, ON M3N 1M6  
@@ -7,9 +7,9 @@
 ### What you will learn in this lesson
   * [Challenge 1](#challenges)
   * [Challenge 2](#challenge-2)
-   * [Hint 1](#hint-1)
-   * [Hint 2](#hint-2)
-   * [Hint 3](#hint-3)
+    * [Hint 1](#hint-1)
+    * [Hint 2](#hint-2)
+    * [Hint 3](#hint-3)
   * [Challenge 3](#challenge-3)
 
 ## Challenges
