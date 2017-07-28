@@ -1,5 +1,5 @@
 # Lesson 3
-**Date**: Saturday, July 29, 2017  
+**Date**: Saturday, July 22, 2017  
 **Time**: 10:00 am - 12:00 pm  
 **Location**: York Woods Public Library, 1785 Finch Ave W, North York, ON M3N 1M6  
 **Instructor**: Dexter Rivera
