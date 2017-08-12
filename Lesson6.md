@@ -1,4 +1,4 @@
-# Lesson 5
+# Lesson 6
 **Date**: Saturday, August 12, 2017  
 **Time**: 10:00 am - 12:00 pm  
 **Location**: York Woods Public Library, 1785 Finch Ave W, North York, ON M3N 1M6  
