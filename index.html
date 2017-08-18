@@ -1,97 +1,272 @@
 <head>
+  <title>Dexter's Website</title>
+  <link rel="shortcut icon" href="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif" type="image/x-icon">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script src="script.js"></script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwhwzuYqcXRjqamI5AdLCsl9x77TkLVpE&callback=initMap"></script>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=114751542518416";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   <link rel="stylesheet" href="style.css">
 
-  <div class="ui top inverted purple fixed menu">
-    <div class="item">
-      <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
-    </div>
-    <a class="item" href="#introduction">Introduction</a>
-    <a class="item" href="#biography">Biography</a>
-    <a class="item" href="#sports">My favourite sports</a>
-    <a class="item" href="#videogames">My top 5 favourite video games</a>
+  <div class="banner">
+    <h1 class="white title">DEXTER'S WEBSITE</h1>
+    <p class="white">Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
   </div>
+  <div class="body">
+    <div class="ui top inverted purple fixed menu">
+      <div class="item">
+        <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+      </div>
+      <a class="item" href="#introduction">Introduction</a>
+      <a class="item" href="#biography">Biography</a>
+      <a class="item" href="#sports">My favourite sports</a>
+      <a class="item" href="#videogames">My top 5 favourite video games</a>
+    </div>
 
-  <!-- This is a h1 tag. h1 is used to make really large texts for titles -->
-  <h1>Dexter Rivera's Website</h1>
-
-  <div class="ui grid">
-    <div class="four wide column">
-      <div class="ui card">
-        <div class="image">
-          <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
-        </div>
-        <div class="content">
-          <a class="header">Dexter Rivera</a>
-          <div class="meta">
-            <span class="date">HTML and CSS Coder</span>
+    <div class="ui grid">
+      <div class="four wide column">
+        <div class="ui card">
+          <div class="image">
+            <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
           </div>
-          <div class="description">
+          <div class="content">
+            <a class="header">Dexter Rivera</a>
+            <div class="meta">
+              <span class="date">HTML and CSS Coder</span>
+            </div>
+            <div class="description">
+              <div class="ui list">
+                <div class="item"><i class="Philippines flag"></i> Born in the Philippines</div>
+                <div class="item"><i class="Birthday icon"></i> Birthday on December 20, 1997</div>
+                <div class="item"><i class="Home icon"></i> Lives in Markham, Ontario</div>
+                <div class="item"><i class="Calendar icon"></i> 19 years old</div>
+                <div class="item"><i class="Graduation icon"></i> Attends the University of Toronto</div>
+              </div>
+            </div>
+          </div>
+          <div class="extra content">
             <div class="ui list">
-              <div class="item"><i class="Philippines flag"></i> Born in the Philippines</div>
-              <div class="item"><i class="Birthday icon"></i> Birthday on December 20, 1997</div>
-              <div class="item"><i class="Home icon"></i> Lives in Markham, Ontario</div>
-              <div class="item"><i class="Calendar icon"></i> 19 years old</div>
-              <div class="item"><i class="Graduation icon"></i> Attends the University of Toronto</div>
+              <div class="item">
+                <i class="user icon"></i>
+                <div class="content">
+                  2 Friends
+                </div>
+              </div>
+            </div>
+            <div class="ui list">
+              <div class="item">
+                <i class="blue thumbs up icon"></i>
+                <div class="content">
+                  10 Likes
+                </div>
+              </div>
+            </div>
+            <div class="ui list">
+              <div class="item">
+                <i class="red heart icon"></i>
+                <div class="content">
+                  3 Loves
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="extra content">
-          <a>
-            <i class="user icon"></i>
-            22 Friends
-          </a>
+        <div class="ui raised segments animated bounceInRight">
+          <div class="ui purple inverted segment">
+            <h2><i class="photo icon"></i>Photos</h2>
+          </div>
+          <div class="ui segment">
+            <div class="ui small images">
+              <img src="https://sowc.ca/wp-content/uploads/2016/04/Uoft_universitycollege.jpg">
+              <img src="https://tspn.ca/wp-content/uploads/2016/10/IMG_0148.png">
+              <img src="https://hoopshabit.com/files/2016/01/kyle-lowry-nba-toronto-raptors-philadelphia-76ers.jpg">
+              <img src="https://www.thestar.com/content/dam/thestar/sports/raptors/2016/07/01/demar-derozan-was-never-going-to-leave-the-raptors/demar-derozan.jpg.size.custom.crop.1086x722.jpg">
+              <img src="https://pbs.twimg.com/profile_images/750067904847183873/b71spDaP_400x400.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nine wide column">
+        <iframe src="https://www.youtube.com/embed/Y1BlT4_c_SU" height='300px' width="500px"></iframe>
+        <div class="ui raised segments animated bounceInRight" id="sports">
+          <div class="ui purple inverted segment">
+            <h2><i class="soccer icon"></i>My favourite sports</h2>
+          </div>
+          <div class="ui segment">
+            <p class="popup">Here are a list of my favourite sports: </p>
+            <ul class="popup"> <!-- for unordered lists (bullet points) -->
+              <li id="basketball">Basketball</li> <!-- each of the bullet points must be inside li tags -->
+              <li>Baseball</li>
+              <li>Tennis</li>
+              <li>Swimming</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ui raised segments animated bounceInLeft" id="videogames">
+          <div class="ui inverted purple segment">
+            <h2 id="videogames"><i class="game icon"></i>My top 5 favourite video games</h2>
+          </div>
+          <div class="ui segment">
+            <p class="popup">Here is a list of my favourite video games: </p>
+            <ol class="popup">
+              <li>Pokemon Emerald Version</li>
+              <li>NBA 2K17</li>
+              <li>MLB The Show</li>
+              <li>Star Wars Battlefront</li>
+              <li>Call of Duty: Black Ops </li>
+            </ol>
+          </div>
+        </div>
+        <div class="ui raised segments animated bounceInLeft">
+          <div class="ui purple inverted segment">
+            <h2><i class="film icon"></i>Movies</h2>
+          </div>
+          <div class="ui segment">
+            <div class="ui items">
+              <div class="item">
+                <div class="ui small image">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Spider-Man_Homecoming_poster.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Spider Man 3 - Homecoming</div>
+                  <div class="meta">
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                  </div>
+                  <div class="description">
+                    <p>This was an amazing movie! I loved the new Spider Man! Highly recommended!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui small image">
+                  <img src="https://i2.wp.com/www.moviescut.com/wp-content/uploads/2016/12/Despicable-Me-3-Poster-1-India-Release-2017.png">
+                </div>
+                <div class="content">
+                  <div class="header">Despicable Me 3</div>
+                  <div class="meta">
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                  </div>
+                  <div class="description">
+                    <p>This was a great movie! I love mignons! I highly recommend it! </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui small image">
+                  <img src="https://www.bleedingcool.com/wp-content/uploads/2017/05/wonder-woman1.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Wonder Woman</div>
+                  <div class="meta">
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                    <i class="yellow star icon"></i>
+                  </div>
+                  <div class="description">
+                    <p>I enjoyed this movie a lot! Would recommend it!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui raised segments">
+          <div class="ui purple inverted segment">
+            <h2><i class="marker icon"></i> Check-Ins</h2>
+          </div>
+          <div class="ui segment">
+            <div class="ui items">
+              <div class="item">
+                <div class="image">
+                  <img src="https://www.rateyourseats.com/assets/images/questions/rogers-centre-shaded-day-game.jpg">
+                </div>
+                <div class="content">
+                  <a class="header">Rogers Centre</a>
+                  <div class="meta">
+                    <span><i class="red marker icon"></i>1 Blue Jays Way, Toronto, ON M5V 1J1</span>
+                  </div>
+                  <div class="description">
+                    <p>Witnessed a great baseball game at the Rogers Centre! The Blue Jays were down 2-0 through 8 innings then they hit back to back home runs in the bottom of the 9th to win 3-2! What a night!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="ui raised segments">
+          <div class="ui purple inverted segment"><h2>Comments</h2></div>
+          <div class="ui segment"><div class="fb-comments" data-href="https://projectinclude-dexterrivera.github.io/MyWebsite" data-width="100%" data-numposts="5"></div>
+          </div></div>
+        </div>
+      <div class="three wide column">
+        <div class="ui raised segments">
+          <div class="ui purple inverted segment">
+            <h2><i class="user icon"></i>Friends</h2>
+          </div>
+          <div class="ui segment">
+            <div class="ui fluid card">
+              <div class="image">
+                <img src="https://semantic-ui.com/images/avatar/large/daniel.jpg">
+              </div>
+              <div class="content">
+                <a class="header">Daniel Louise</a>
+              </div>
+            </div>
+            <div class="ui fluid card">
+              <div class="image">
+                <img src="https://semantic-ui.com/images/avatar/large/helen.jpg">
+              </div>
+              <div class="content">
+                <a class="header">Helen Troy</a>
+              </div>
+            </div>
+            <div class="ui fluid card">
+              <div class="image">
+                <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              </div>
+              <div class="content">
+                <a class="header">Elliot Fu</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="twelve wide column">
-      <div class="ui raised segments animated bounceInRight" id="introduction">
-        <div class="ui purple inverted segment">
-          <!-- h2 is similar to h1, but the text is smaller -->
-          <h2>Introduction</h2>
-        </div>
-
-        <div class="ui segment">
-          <!-- p tags are used for paragraphs -->
-          <p>Hello Internet! On this website you can learn all about me! Have fun exploring!</p>
-        </div>
-      </div>
-
-      <div class="ui raised segments animated bounceInRight" id="sports">
-        <div class="ui purple inverted segment">
-          <h2>My favourite sports</h2>
-        </div>
-        <div class="ui segment">
-          <p class="popup">Here are a list of my favourite sports: </p>
-          <ul class="popup"> <!-- for unordered lists (bullet points) -->
-            <li id="basketball">Basketball</li> <!-- each of the bullet points must be inside li tags -->
-            <li>Baseball</li>
-            <li>Tennis</li>
-            <li>Swimming</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="ui raised segments animated bounceInLeft" id="videogames">
-        <div class="ui inverted purple segment">
-          <h2 id="videogames">My top 5 favourite video games</h2>
-        </div>
-        <div class="ui segment">
-          <p class="popup">Here is a list of my favourite video games: </p>
-          <ol class="popup">
-            <li>Pokemon Emerald Version</li>
-            <li>NBA 2K17</li>
-            <li>MLB The Show</li>
-            <li>Star Wars Battlefront</li>
-            <li>Call of Duty: Black Ops </li>
-          </ol>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div class="footer">
+    Thank you for visiting my website! You can also find at these places:
+      <button class="ui facebook circular icon button">
+        <i class="facebook icon"></i>
+      </button>
+      <button class="ui twitter circular icon button">
+        <i class="twitter icon"></i>
+      </button>
+      <button class="ui linkedin circular icon button">
+        <i class="linkedin icon"></i>
+      </button>
+      <button class="ui youtube circular icon button">
+        <i class="youtube icon"></i>
+      </button>
   </div>
 </body>
